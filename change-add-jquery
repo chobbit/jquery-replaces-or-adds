@@ -1,0 +1,37 @@
+/*---------------------------
+Changing content with jquery
+---------------------------/*
+
+/* Change Add text: */
+
+var myVal = jQuery().jquery;
+if (window.jQuery) {  
+  console.log("jQuery version = " + myVal);
+}
+
+jQuery(document).ready(function($) {
+// Inside of this function, $() will work as an alias for jQuery()
+// and other libraries also using $ will not be accessible under this shortcut
+
+  $( "#srchButton" ).append( "<p>Search</p>" );
+
+}); 
+
+
+
+
+/* Change an attribute like a search form placeholder: */
+
+var myVal = jQuery().jquery;
+if (window.jQuery) {  
+  console.log("jQuery version = " + myVal);
+}
+
+jQuery(document).ready(function($) {
+// Inside of this function, $() will work as an alias for jQuery()
+// and other libraries also using $ will not be accessible under this shortcut
+    
+  $( "#srchInput" ).attr("placeholder", "Enter your search here");
+
+}); 
+  
