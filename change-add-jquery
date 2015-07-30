@@ -2,7 +2,17 @@
 Changing content with jquery
 ---------------------------/*
 
-/* Change Add text: */
+/* Replace any text in a div */
+
+jQuery(document).ready(function($) {
+  $(".usp-new-in").text(function () {
+    return $(this).text().replace("New in", "NEW IN"); 
+  });
+});
+
+
+
+/* Add text to a div: */
 
 var myVal = jQuery().jquery;
 if (window.jQuery) {  
@@ -16,7 +26,6 @@ jQuery(document).ready(function($) {
   $( "#srchButton" ).append( "<p>Search</p>" );
 
 }); 
-
 
 
 
