@@ -4,68 +4,74 @@ Changing or adding content with jquery
 
 // Simple add a CSS
 
-$("#DIV .DIV").css("background","#FFF");
+    $("#DIV .DIV").css("background","#FFF");
 
 
 
 // Simple add multiple CSS
 
-$("#DIV .DIV").css({
-    float: "left", 
-    width: "59px", 
-    background: "#FFF" 
-});
+    $("#DIV .DIV").css({
+        float: "left", 
+        width: "59px", 
+        background: "#FFF" 
+    });
 
 
 
 // Force !important styles to the inline element
 
-$( '#DIV .DIV' ).each(function () {
-  this.style.setProperty( 'position', 'fixed', 'important' );
-  this.style.setProperty( 'right', '20px', 'important' );
-});
+    $( '#DIV .DIV' ).each(function () {
+      this.style.setProperty( 'position', 'fixed', 'important' );
+      this.style.setProperty( 'right', '20px', 'important' );
+    });
 
 
 
 // Replace any text in a div
 
-jQuery(document).ready(function($) {
-  $("#DIV .DIV").text(function () {
-    return $(this).text().replace("New in", "NEW IN"); 
-  });
-});
+    jQuery(document).ready(function($) {
+      $("#DIV .DIV").text(function () {
+        return $(this).text().replace("New in", "NEW IN"); 
+      });
+    });
 
 
 
 // Add text to a div:
 
-var myVal = jQuery().jquery;
-if (window.jQuery) {  
-  console.log("jQuery version = " + myVal);
-}
-
-jQuery(document).ready(function($) {
-// Inside of this function, $() will work as an alias for jQuery()
-// and other libraries also using $ will not be accessible under this shortcut
-
-  $( "#srchButton" ).append( "<p>Search</p>" );
-
-}); 
+    var myVal = jQuery().jquery;
+    if (window.jQuery) {  
+      console.log("jQuery version = " + myVal);
+    }
+    
+    jQuery(document).ready(function($) {
+    // Inside of this function, $() will work as an alias for jQuery()
+    // and other libraries also using $ will not be accessible under this shortcut
+    
+      $( "#srchButton" ).append( "<p>Search</p>" );
+    
+    }); 
 
 
 
 // Change an attribute like a search form placeholder:
 
-var myVal = jQuery().jquery;
-if (window.jQuery) {  
-  console.log("jQuery version = " + myVal);
-}
-
-jQuery(document).ready(function($) {
-// Inside of this function, $() will work as an alias for jQuery()
-// and other libraries also using $ will not be accessible under this shortcut
+    var myVal = jQuery().jquery;
+    if (window.jQuery) {  
+      console.log("jQuery version = " + myVal);
+    }
     
-  $( "#srchInput" ).attr("placeholder", "Enter your search here");
-
-}); 
+    jQuery(document).ready(function($) {
+    // Inside of this function, $() will work as an alias for jQuery()
+    // and other libraries also using $ will not be accessible under this shortcut
+        
+      $( "#srchInput" ).attr("placeholder", "Enter your search here");
+    
+    }); 
   
+
+
+// Import an element from any page into a different page, (could replace iframe):
+
+    $('#TargetDiv .TargetDiv').load('/store-locator/ #DivToImport');
+
