@@ -54,6 +54,22 @@ Changing or adding content with jquery
 
 
 
+// Change parts of string in img src (example: <img src="http://i1.adis.ws/t/jpl/sc_product_list?plu=sc_068200_a&wid=128&hei=144&qlt=100&unsharp=0,1,1,7&qlt=100&w=256&h=288" ) 
+
+    $('img').each(function(){
+    
+        var srcString = this.getAttribute('src');
+    
+        srcString = srcString.split('wid=128').join('wid=256');
+        srcString = srcString.split('hei=144').join('hei=288');
+        srcString = srcString.split('qlt=80').join('qlt=100');
+        // same thing for the other two numbers
+    
+        this.setAttribute('src', srcString);
+    
+    });
+
+
 // Change an attribute like a search form placeholder:
 
     var myVal = jQuery().jquery;
